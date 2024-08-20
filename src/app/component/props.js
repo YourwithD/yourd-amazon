@@ -35,9 +35,25 @@ export const allSideNav = [
                 {"id": "c", "title": "Movers and Shakers"}]
        },
        {  "id": "2",
-        "heading": "Treand",
-        "info": [{"id": "a", "title": "Best Selles"},
-                {"id": "b", "title": "New Relea"},
-                {"id": "c", "title": "Movers and Shaks"}]   
-       }  
+        "heading": "Digital Content and Devices",
+        "info": [{"id": "a", "title": "Amazon miniTV-Free entertainment"},
+                {"id": "b", "title": "Echo & Alexa"},
+                {"id": "c", "title": "Fire TV"},  
+                {"id": "d", "title": "Kindle E-Readers & eBooks"},  
+                {"id": "e", "title": "Audible Audiobooks"},  
+                {"id": "f", "title": "Amazon Prime Video"},  
+                {"id": "g", "title": "Amazon Prime Music"},],  
+       },
+       {  "id": "3",
+        "heading": "Programs & Features",
+        "info": [{"id": "a", "title": "Amazon Pay"},
+                {"id": "b", "title": "Gift Cards & Mobile Recharges"},
+                {"id": "c", "title": "Amazon Business"},], 
+       },
+       {  "id": "4",
+        "heading": "Help & Settings",
+        "info": [{"id": "a", "title": "Your Account"},
+                {"id": "b", "title": "Customer Service"},
+                {"id": "c", "title": "Sign Out"},], 
+       }      
 ];

@@ -56,7 +56,7 @@ const Hader = () => {
         <div className='hidden sm:flex items-center h-14 text-lighttext  my-1 hover:border-2 cursor-pointer p-1 gap-1'><GiIndiaGate/> <span>En</span><IoMdArrowDropdown className='mt-4' /></div>
         <div className=' flex items-center text-start text-lighttext h-14 my-1 hover:border-2 cursor-pointer p-1'>
        
-        <div onClick={()=> signIn()} > <p className={`text-[16px] sm:text-[10px] ${search ? "hidden" : "flex"}`}>Hello Rajesh</p>
+        <div onClick={()=> signIn()} > <p className={`text-[16px] sm:text-[10px] ${search ? "hidden" : "flex"}`}>Hello Your Name</p>
          <h3 className='hidden sm:flex sm:text-[10px] md:text-[14px] text-xl'> Acount & List</h3></div>
         <IoMdArrowDropdown className='h-5 hidden sm:flex w-8 mt-7 '/>
         </div>
@@ -75,7 +75,7 @@ const Hader = () => {
       </div>
       <section>
         <div className='w-screen  flex z-10 relative   h-12 items-center cursor-pointer top-16  bg-amazon_light flex-1 '>
-<div onClick={()=>setSidenav(!sidenav)} className='flex sm:flex sm:text-[10px] md:text-[14px] h-12 px-2 text-white items-center  p-1   hover:border-2 cursor-pointer'>< RxHamburgerMenu className='text-3xl px-1 sm:text-xl md:text-3xl' /> All </div>
+        <div onClick={()=>setSidenav(!sidenav)} className='flex cursor-pointer sm:flex sm:text-[10px] md:text-[14px] h-12 px-2 text-white items-center  p-1   hover:border-2'>< RxHamburgerMenu className='text-3xl px-1 sm:text-xl md:text-3xl' /> All </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Today Deals </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Buy Again </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Amazon Mini TV </div>
@@ -85,7 +85,7 @@ const Hader = () => {
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'> Best Sellers</div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Prime <IoMdArrowDropdown /> </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Mobile </div>
-    </div>
+      </div>
     {
       sidenav ? < Sidenav /> : ""
     }

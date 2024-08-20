@@ -23,7 +23,7 @@ useEffect(() => {
     <div className='mt-16 w-screen h-auto relative m-auto'>
       <div className='sm:flex justify-between w-full '>
         {products == 0 ?  <div className='flex justify-center m-auto text-center flex-col p-10   w-full h-full ' >
-          <p>Your Cart Is Empty</p> 
+          <p className='text-6xl font-bold '>Your Cart Is Empty</p>
          <Link href='/'> <button className='hover:bg-yellow-400 bg-yellow-500 rounded-md mt-2 w-40  p-3 m-5 flex text-center justify-center   cursor-pointer'>Continue Shoping</button> </Link>
         </div>
         :

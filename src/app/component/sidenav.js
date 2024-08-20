@@ -14,18 +14,25 @@ const Sidenav = () => {
     initial={{ opacity: 0, scale: 0, }}
     animate={{ opacity: 1, scale: 1, }}
     transition={{ duration: 0.5 }}
-     className={   `h-screen w-80  z-50   bg-white border-2  top-0 left-0 flex flex-col absolute ${closeNav ? "hidden " : "w-80 opacity-10"} ` }>
-        <div className='w-full h-10 bg-amazon_blue text-white items-center flex px-10 gap-3 text-2xl ' ><CgProfile /> Hello, Raja</div>
-        <div>
-         {/*    <h2 className='px-5 text-xl font-bold'>head</h2>
-            <ul>
-                <li className='flex items-center justify-between px-5 cursor-pointer hover:bg-slate-100'>home <span>c</span> </li>
-                <li className='flex items-center justify-between px-5 cursor-pointer hover:bg-slate-100'>home <span>c</span> </li>
-            </ul>*/}
+     className={   `h-screen w-400px z-50 w-[30vw] bg-white border-2  top-0 left-0 flex flex-col absolute ${closeNav ? "hidden " : "w-80 opacity-10"} ` }>
+        <div className='w-full h-16 absolute justify-center text-center  bg-amazon_blue text-white items-center flex px-10 gap-3 text-2xl ' ><CgProfile /> Hello, Your Name</div>
+        <div className=' w-full pt-16 hover:overflow-scroll'>
          
             {allSideNav.map(item=>{  
                 return (
-                    <h3 key={item.id} className='px-5 bg-black text-xl font-bold'>{item.heading} heading </h3>
+                  <>
+                    <h3 key={item.id} className='px-5 p-5 text-xl border-t-2 gap-5 font-bold' >{item.heading} </h3>
+                    {item.info.map(item=>{
+                      return (
+                      <>
+                        <h3 key={item.id} className='px-5 pb-5 cursor-pointer hover:underline '>{item.title}</h3>
+                       
+                        </>
+                      )
+
+                    })}               
+
+                    </>
                 )                     
               
                
@@ -33,7 +40,7 @@ const Sidenav = () => {
 
 </div>
 
-        <div onClick={()=>{setCloseNav(true)}} className='flex absolute top-2 -right-10 text-4xl cursor-pointer ' ><IoMdClose /></div>
+        <div onClick={()=>{setCloseNav(true)}} className='flex absolute bg-slate-400 top-2  -right-9 text-4xl cursor-pointer ' ><IoMdClose /></div>
     </motion.div>
     
   )
@@ -41,5 +48,3 @@ const Sidenav = () => {
 }
 
 export default Sidenav
-
-{/* <div className='flex items-center justify-between px-5 cursor-pointer hover:bg-slate-100'> <span>{item.info.title}</span> <IoIosArrowForward /></div> */}
