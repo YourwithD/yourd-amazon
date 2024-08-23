@@ -5,12 +5,13 @@ import { Provider } from 'react-redux'
 import { store } from '../redux/store'
 import Hader from './hader'
 import Footer from './footer'
+import { SessionContext } from 'next-auth/react'
 
-const Wrapper = ({children}) => {
+const Wrapper = ({children, session, ...pageProps}) => {
   return (
     <>
     <Provider store={store}>
-    <SessionProvider >
+    <SessionProvider session={session} >
       <Hader />
      {children}
      <Footer />

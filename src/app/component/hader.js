@@ -73,7 +73,7 @@ const Hader = () => {
         </div>
 
       </div>
-      <section>
+      <div className='w-screen'>
         <div className='w-screen  flex z-10 relative   h-12 items-center cursor-pointer top-16  bg-amazon_light flex-1 '>
         <div onClick={()=>setSidenav(!sidenav)} className='flex cursor-pointer sm:flex sm:text-[10px] md:text-[14px] h-12 px-2 text-white items-center  p-1   hover:border-2'>< RxHamburgerMenu className='text-3xl px-1 sm:text-xl md:text-3xl' /> All </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Today Deals </div>
@@ -89,7 +89,7 @@ const Hader = () => {
     {
       sidenav ? < Sidenav /> : ""
     }
-    </section>
+    </div>
     </>
   )
 }

@@ -7,15 +7,15 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <section className='    w-full h-auto '>
+      <section className='    w-screen h-auto '>
       <div className='flex flex-col justify-center p-16 text-center bg-white  w-screen  '>
         <h2>See Personalised recommendations </h2>
         <button className='p-2 flex m-auto w-80 justify-center text-center  bg-yellow-400 rounded-lg '> Sign In</button>
         <p>New Costormer? <span className='cursor-pointer  text-blue-400 '>Start hare</span></p>
       </div>
 
-      <Link href="/">  <div className='w-full flex justify-center bg-slate-700 p-5 text-white hover:bg-slate-600  '>Back To Top</div>  </Link >
-        <div className='sm:flex  border-b-2 justify-evenly p-2  sm:p-10   text-start bg-amazon_light w-full text-white  '>
+      <Link href="/">  <div className='w-screen flex justify-center bg-slate-700 p-5 text-white hover:bg-slate-600  '>Back To Top</div>  </Link >
+        <div className='sm:flex  border-b-2 justify-evenly p-2  sm:p-10   text-start bg-amazon_light w-screen text-white  '>
             <div className='pt-5'>
                 <h2 className='text-2xl font-bold '>Get to Know Us</h2>
                 <ul className=''>

@@ -35,9 +35,6 @@ const Banar = () => {
             /></div>
       <FaArrowRight onClick={nextImg} className='z-20 text-black absolute top-12  sm:top-36 flex cursor-pointer right-0 text-4xl mr-5' />
         
-      
-     
-
     </div>
   )
 }
