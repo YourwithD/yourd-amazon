@@ -7,10 +7,10 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <section className='    w-screen h-auto '>
-      <div className='flex flex-col justify-center p-16 text-center bg-white  w-screen  '>
+      <section className='    w-full h-auto'>
+      <div className='flex flex-col justify-center p-16 text-center bg-white  w-full'>
         <h2>See Personalised recommendations </h2>
-        <button className='p-2 flex m-auto w-80 justify-center text-center  bg-yellow-400 rounded-lg '> Sign In</button>
+        <button className='p-2 flex m-auto w-40 md:w-80 justify-center text-center  bg-yellow-400 rounded-lg '> Sign In</button>
         <p>New Costormer? <span className='cursor-pointer  text-blue-400 '>Start hare</span></p>
       </div>
 

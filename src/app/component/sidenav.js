@@ -14,7 +14,7 @@ const Sidenav = () => {
     initial={{ opacity: 0, scale: 0, }}
     animate={{ opacity: 1, scale: 1, }}
     transition={{ duration: 0.5 }}
-     className={   `h-screen md:w-[30vw] z-50 w-[70vw]  bg-white border-2  top-0 left-0 flex flex-col absolute ${closeNav ? "hidden " : "w-80 opacity-10"} ` }>
+     className={   `h-screen md:w-[30vw] w-[70vw]  bg-white border-2 z-30 fixed top-0 left-0 flex flex-col ${closeNav ? "hidden " : "w-80 opacity-10"} ` }>
         <div className='w-full h-16 absolute justify-center text-center  bg-amazon_blue text-white items-center flex px-10 gap-3 md:text-2xl ' ><CgProfile /> Hello, Your Name</div>
         <div className=' w-full pt-16 hover:overflow-scroll'>
          

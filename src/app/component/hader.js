@@ -23,7 +23,7 @@ const Hader = () => {
  
   return (
     <>
-      <div className="hader w-screen h-16 z-20 bg-amazon_blue flex justify-between items-center top-0 px-5 py-3 fixed">
+      <div className="hader w-full h-16 z-20 fixed bg-amazon_blue flex justify-between items-center top-0 px-5 py-3 ">
       <Link href="/"><div className={`flex items-center h-14 text-lighttext  my-1 hover:border-2 cursor-pointer p-1 text-3xl `}> {search ? <FaArrowLeft onClick={()=>setSearch(false)} /> : "YourD" }</div></Link>
         <div className='hidden sm:flex sm:text-[10px] md:text-[14px] text-start text-lighttext h-14 my-1 hover:border-2 cursor-pointer p-1'>
         <CiLocationOn className='h-5  w-8 sm:mt-5  md:mt-6 '/>
@@ -64,17 +64,18 @@ const Hader = () => {
         <p>Return</p>
          <h3 className='flex text-xl'> & Orders</h3>
         </div>
+        <div>
         <Link href="/cart" >
         <div className='flex text-lighttext  items-start h-14 p-1   hover:border-2 cursor-pointer'>
        <span className='flex absolute ml-2.5 text-yellow-500 p-1 -mt-1'> {products.length > 0 ? products.length : 0 } </span><span className='mt-4 flex' > <MdOutlineShoppingCartCheckout className='text-4xl' /> Cart</span>
-        </div></Link>
+        </div></Link></div>
         <div onClick={()=>{setSearch(true)}} className={`flex sm:hidden text-lighttext  items-center h-14 p-1   hover:border-2 cursor-pointer ${search ? "hidden" : "flex"}`}>
         <CiSearch className='h-8 w-8 p-1  ' />
         </div>
 
       </div>
-      <div className='w-screen'>
-        <div className='w-screen  flex z-10 relative   h-12 items-center cursor-pointer top-16  bg-amazon_light flex-1 '>
+      <div className='w-full  flex relative mt-16   h-12 items-center cursor-pointer bg-amazon_light flex-1'>
+        <div className=' items-center cursor-pointer flex  '>
         <div onClick={()=>setSidenav(!sidenav)} className='flex cursor-pointer sm:flex sm:text-[10px] md:text-[14px] h-12 px-2 text-white items-center  p-1   hover:border-2'>< RxHamburgerMenu className='text-3xl px-1 sm:text-xl md:text-3xl' /> All </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Today Deals </div>
         <div className='sm:flex sm:text-[10px] md:text-[14px]  text-white h-12 px-2  items-center  p-1 hidden   hover:border-2 cursor-pointer'>Buy Again </div>

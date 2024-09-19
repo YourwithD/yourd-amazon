@@ -23,7 +23,7 @@ const Product = () => {
       {
         product.map((item)=>{
           return(
-            <div  key={item.id} className=' z-10 '> 
+            <div  key={item.id} className='z-0'> 
             <div className='m-auto mt-16  border-2   bg-white w-80 flex flex-col '>
       <div className="imag w-80 h-96  flex flex-col items-center  ">
         <h2 className=' text-xl flex justify-end text-right w-full p-2  ' >{item.category}</h2>

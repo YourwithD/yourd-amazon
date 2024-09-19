@@ -25,15 +25,15 @@ const Banar = () => {
   }, [5000])
 
   return (
-    <div className='mt-16 w-screen h-auto relative m-auto'>
+    <div className='w-100vw h-auto relative m-auto'>
       
-      <FaArrowLeft onClick={prevImg}  className='z-20  text-black absolute top-12 sm:top-36 flex cursor-pointer text-4xl ml-5' />
+      <FaArrowLeft onClick={prevImg}  className='z-0  text-black absolute top-12 sm:top-36 flex cursor-pointer text-4xl ml-5' />
             <div className='w-full h-auto' >
             <Image
             alt={banarImg[index]}
             src={banarImg[index]}
             /></div>
-      <FaArrowRight onClick={nextImg} className='z-20 text-black absolute top-12  sm:top-36 flex cursor-pointer right-0 text-4xl mr-5' />
+      <FaArrowRight onClick={nextImg} className='z-0 text-black absolute top-12  sm:top-36 flex cursor-pointer right-0 text-4xl mr-5' />
         
     </div>
   )
